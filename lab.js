@@ -5,9 +5,10 @@
 */
 
 //Code here
-const me = new Object();
-me.name = 'sam';
-me.age = 33;
+let me = {
+    name: 'sam',
+    age: 33
+};
 
 //////////////////////////// PROBLEM 2 ////////////////////////////
 
@@ -17,11 +18,12 @@ me.age = 33;
 //and goodBoy/goodGirl (a boolean).
 
 //Code here
-const dog = {};
-dog.name = 'dog1';
-dog.color = 'black';
-dog.age = '1';
-dog.goodBoy = true;
+const dog = {
+    name: 'dog1',
+    color: 'black',
+    age: 1,
+    goodBoy: true
+};
 
 //////////////////////////// PROBLEM 3 ////////////////////////////
 /* Print out the name of the dog you created in problem 2 using dot-notation. */
@@ -45,12 +47,13 @@ console.log(dog['color']);
 
 //Code here
 let favoriteThings = {
-band: 'death grips',
-food: 'hummus',
-person: 'peter kropotkin',
-book: 'homage to catalonia',
-movie: 'hot fuzz',
-holiday: 'birthday'};
+    band: 'death grips',
+    food: 'hummus',
+    person: 'peter kropotkin',
+    book: 'homage to catalonia',
+    movie: 'hot fuzz',
+    holiday: 'birthday'
+};
 
 
 /*
@@ -69,7 +72,6 @@ favoriteThings.car = 'wrx';
 //Code here
 favoriteThings.food = 'kale';
 favoriteThings.book = 'manufacturing consent';
-console.log(favoriteThings);
 //////////////////////////// PROBLEM 6 ////////////////////////////
 
 // Do not edit the code below.
@@ -86,8 +88,7 @@ var carDetails = {
 */
 
 //Code Here
-
-
+const {color, make, model, year} = carDetails;
 
 //////////////////////////// PROBLEM 7 ////////////////////////////
 
@@ -99,7 +100,7 @@ var carDetails = {
 
 function greeting( obj ) {
   //Code Here
-  
+  const {firstName, lastName, title} = obj;  
   // Do not edit the code below.
   return 'Hello, ' + title + ' ' + firstName + ' ' + lastName + '!';
   // Do not edit the code above.
