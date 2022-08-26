@@ -5,7 +5,9 @@
 */
 
 //Code here
-
+const me = new Object();
+me.name = 'sam';
+me.age = 33;
 
 
 //////////////////////////// PROBLEM 2 ////////////////////////////
