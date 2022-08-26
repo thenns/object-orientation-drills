@@ -119,7 +119,10 @@ function greeting( obj ) {
 */
 
 //Code Here
-
+function totalPopulation (obj) {
+    const {utah, california, texas, arizona} = obj;
+    return utah + californai + texas + arizona;
+};
 
 
 //////////////////////////// PROBLEM 9 ////////////////////////////
@@ -133,7 +136,11 @@ function greeting( obj ) {
 */
 
 //Code Here
-
+function ingredients (obj) {
+    const {carb, fat, protein} = obj;
+    const array.push(carb, fat, protein);
+    return array;
+};
 
 
 //////////////////////////// PROBLEM 10 ////////////////////////////
@@ -155,7 +162,8 @@ var user = {
 */
 
 //Code Here
-
+user.name = 'Bryan G. Smith';
+user.email = 'bryan.smith@devmounta.in';
 
 //////////////////////////// PROBLEM 11 ////////////////////////////
 /*
@@ -163,7 +171,7 @@ var user = {
 */
 
 //Code Here
-
+delete user.age;
 
 //////////////////////////// PROBLEM 12 ////////////////////////////
 /*
@@ -173,8 +181,12 @@ var user = {
 */
 
 //Code here
+class Cat {
+    consturctor(name, age, color) {
+    }
+};
 
-
+const myCat = new Cat('cat1', '2', 'black');
 
 //////////////////////////// PROBLEM 13 ////////////////////////////
 /*
@@ -185,7 +197,11 @@ var user = {
 */
 
 //Code here
-
+class Wizard {
+    constructor(name, age, favoriteSpell){
+    }
+    function castSpe
+};
 //////////////////////////// PROBLEM 14 ////////////////////////////
 /*
     Write a class called Phone. We'll use it as if we were creating
