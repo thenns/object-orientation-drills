@@ -9,7 +9,6 @@ const me = new Object();
 me.name = 'sam';
 me.age = 33;
 
-
 //////////////////////////// PROBLEM 2 ////////////////////////////
 
 //Create an object saved to the variable dog.
@@ -18,21 +17,24 @@ me.age = 33;
 //and goodBoy/goodGirl (a boolean).
 
 //Code here
-
-
+const dog = {};
+dog.name = 'dog1';
+dog.color = 'black';
+dog.age = '1';
+dog.goodBoy = true;
 
 //////////////////////////// PROBLEM 3 ////////////////////////////
 /* Print out the name of the dog you created in problem 2 using dot-notation. */
 
 //Code here
-
+console.log(dog.name);
 
 
 //////////////////////////// PROBLEM 4 ////////////////////////////
 /* Print out the color of the dog you created in problem 2 using bracket-notation. */
 
 //Code here
-
+console.log(dog['color']);
 
 
 //////////////////////////// PROBLEM 5 ////////////////////////////
@@ -42,6 +44,13 @@ me.age = 33;
 */
 
 //Code here
+let favoriteThings = {
+band: 'death grips',
+food: 'hummus',
+person: 'peter kropotkin',
+book: 'homage to catalonia',
+movie: 'hot fuzz',
+holiday: 'birthday'};
 
 
 /*
@@ -49,16 +58,18 @@ me.age = 33;
 */
 
 //Code here
-
+favoriteThings.car = 'wrx';
 
 /*
   Now use bracket or dot notation to change the value of the food key in your favoriteThings object to be 'Chicken Nuggets'
-  and change the value of the book key in your favoriteThings object to be 'Harry Potter'. (If they were either of those things already, change them to something else.)
+  and change the value of the book key in your favoriteThings object to be 'Harry Potter'. (If they were either of those 
+  things already, change them to something else.)
 */
 
 //Code here
-
-
+favoriteThings.food = 'kale';
+favoriteThings.book = 'manufacturing consent';
+console.log(favoriteThings);
 //////////////////////////// PROBLEM 6 ////////////////////////////
 
 // Do not edit the code below.
