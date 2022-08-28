@@ -138,7 +138,8 @@ function totalPopulation (obj) {
 //Code Here
 function ingredients (obj) {
     const {carb, fat, protein} = obj;
-    const array.push(carb, fat, protein);
+    const array = [];
+    array.push(carb, fat, protein);
     return array;
 };
 
@@ -181,12 +182,19 @@ delete user.age;
 */
 
 //Code here
+
 class Cat {
-    consturctor(name, age, color) {
+    constructor(name, age, color) {
+        this.name = name;
+        this.age = age;
+        this.color = color;
     }
 };
 
-const myCat = new Cat('cat1', '2', 'black');
+const myCat = new Cat('cat1', 2, 'black')
+
+console.log(myCat.name)
+
 
 //////////////////////////// PROBLEM 13 ////////////////////////////
 /*
@@ -199,9 +207,16 @@ const myCat = new Cat('cat1', '2', 'black');
 //Code here
 class Wizard {
     constructor(name, age, favoriteSpell){
+        this.name = name;
+        this.age = age;
+        this.favoriteSpell = favoriteSpell;
     }
-    function castSpe
+    castSpell() {
+        console.log(this.name + ' has cast ' + this.favoriteSpell); 
+    }
 };
+const gandalf = new Wizard('gandalf', 24000, 'magical kinesis');
+gandalf.castSpell();
 //////////////////////////// PROBLEM 14 ////////////////////////////
 /*
     Write a class called Phone. We'll use it as if we were creating
