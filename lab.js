@@ -199,7 +199,7 @@ console.log(myCat.name)
 //////////////////////////// PROBLEM 13 ////////////////////////////
 /*
   Create a class called 'Wizard'. Make sure to call your constructor, and require these 3 parameters: name, age, favoriteSpell.
-  Add a function to your Wizard class called castSpell. This function should print "{name} has cast {favoriteSpell}"
+  Add a function to your Wizard class called astSpell. This function should print "{name} has cast {favoriteSpell}"
   Outside of your class, create an instance of your Wizard, passing in whatever values you would like.
   Call the castSpell function on the instance of your wizard.
 */
@@ -217,6 +217,7 @@ class Wizard {
 };
 const gandalf = new Wizard('gandalf', 24000, 'magical kinesis');
 gandalf.castSpell();
+
 //////////////////////////// PROBLEM 14 ////////////////////////////
 /*
     Write a class called Phone. We'll use it as if we were creating
@@ -241,7 +242,23 @@ gandalf.castSpell();
 */
 
 //Code Here
-
+class Phone {
+    constructor(brand, model, storage, color, price, soldProperties){
+        this.brand = brand;
+        this.model = model;
+        this.storage = storage;
+        this.color = color;
+        this.price = price;
+        this.sold = false;
+    }
+    sell () {
+        this.sold = true;
+        console.log(`${this.brand} ${this.model} has been sold.`);
+    }
+    changePrice (newPrice) {
+        this.price = newPrice;  
+    }
+};
   
 /*
     Next make three new phone instances using your class.
@@ -254,6 +271,10 @@ gandalf.castSpell();
 */
 
 //Code Here
+const phone1 = new Phone('google', 'pixel 6', 512, 'olive', 600);
+const phone2 = new Phone('motorola', 'moto g', 32, 'white', 200);
+const phone3 = new Phone('samsung', 'galaxy s30', 128, 'black', 500);
+
 
 /* 
   Call the changePrice function on one of your phones, 
@@ -263,7 +284,8 @@ gandalf.castSpell();
 */ 
 
 //Code Here 
-
+phone2.changePrice(150);
+console.log(phone2);
 
 /*
   Now call the sell method on one of your other phone objects
@@ -272,7 +294,8 @@ gandalf.castSpell();
 */
 
 //Code Here 
-
+phone1.sell();
+console.log(phone1);
 
 //////////////////////////// PROBLEM 15 ////////////////////////////
 
