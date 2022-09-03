@@ -121,9 +121,17 @@ function greeting( obj ) {
 //Code Here
 function totalPopulation (obj) {
     const {utah, california, texas, arizona} = obj;
-    return utah + californai + texas + arizona;
+    return utah + california + texas + arizona;
 };
 
+const populationObj = {
+      utah: 12,
+      california: 13,
+      texas: 21,
+      arizona: 42
+      }
+
+console.log('Total population: ', totalPopulation(populationObj));
 
 //////////////////////////// PROBLEM 9 ////////////////////////////
 
@@ -138,6 +146,7 @@ function totalPopulation (obj) {
 //Code Here
 function ingredients (obj) {
     const {carb, fat, protein} = obj;
+
     const array = [];
     array.push(carb, fat, protein);
     return array;
